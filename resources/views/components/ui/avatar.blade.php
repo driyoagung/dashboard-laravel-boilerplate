@@ -19,8 +19,8 @@ $statusColors = [
 @endphp
 
 <div class="relative inline-flex {{ $attributes->get('class', '') }}">
-    <img src="{{ $src }}" class="{{ $s }} rounded-full object-cover {{ $status ? 'ring-2 ring-white' : '' }}" alt="{{ $alt }}"/>
+    <img src="{{ $src }}" class="{{ $s }} rounded-full object-cover {{ $status ? 'ring-2 ring-white dark:ring-slate-800' : '' }}" alt="{{ $alt }}"/>
     @if($status && isset($statusColors[$status]))
-        <span class="absolute bottom-0 right-0 {{ $ds }} {{ $statusColors[$status] }} rounded-full ring-2 ring-white"></span>
+        <span class="absolute bottom-0 right-0 {{ $ds }} {{ $statusColors[$status] }} rounded-full ring-2 ring-white dark:ring-slate-800"></span>
     @endif
 </div>

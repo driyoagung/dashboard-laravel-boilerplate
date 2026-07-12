@@ -70,7 +70,20 @@ function confirmAction(title, message, onConfirm) {
 }
 
 function toggleThemeHint() {
-    showToast('Dark mode coming soon!', 'info');
+    toggleTheme();
+}
+
+function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.classList.contains('dark');
+    
+    if (isDark) {
+        html.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+    } else {
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+    }
 }
 
 function statusColor(status) {
