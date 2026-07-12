@@ -15,11 +15,11 @@ $h = $heights[$size] ?? $heights['md'];
 <div class="{{ $attributes->get('class', '') }}">
     @if($showLabel)
         <div class="flex justify-between text-xs mb-1.5">
-            <span class="text-slate-500">{{ $slot }}</span>
-            <span class="font-semibold text-slate-900">{{ round($percent) }}%</span>
+            <span class="text-slate-500 dark:text-slate-400">{{ $slot }}</span>
+            <span class="font-semibold text-slate-900 dark:text-white">{{ round($percent) }}%</span>
         </div>
     @endif
-    <div class="{{ $h }} bg-slate-100 rounded-full overflow-hidden">
+    <div class="{{ $h }} bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
         <div class="h-full bg-{{ $color }}-600 rounded-full transition-all duration-300" style="width: {{ $percent }}%"></div>
     </div>
 </div>

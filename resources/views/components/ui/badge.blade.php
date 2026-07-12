@@ -5,12 +5,12 @@
 
 @php
 $colorMap = [
-    'indigo'  => 'bg-indigo-50 text-indigo-700',
-    'emerald' => 'bg-emerald-50 text-emerald-700',
-    'rose'    => 'bg-rose-50 text-rose-700',
-    'amber'   => 'bg-amber-50 text-amber-700',
-    'sky'     => 'bg-sky-50 text-sky-700',
-    'slate'   => 'bg-slate-100 text-slate-600',
+    'indigo'  => 'bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300',
+    'emerald' => 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300',
+    'rose'    => 'bg-rose-50 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300',
+    'amber'   => 'bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300',
+    'sky'     => 'bg-sky-50 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300',
+    'slate'   => 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300',
 ];
 
 $sizeMap = [
